@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Renovation</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>	
+        <div id="image_blur" class="image_blur">
+        </div>
+        <div class="wrapper">
+            <div class="wrapper_img_big">
+                <img id="images" class="img_big" src="images/gallery1/g1i1.jpg" onclick="img_big_click()" alt="image"/>
+                <div class="gallery_name_big">
+                    <h2 id="gallery_h2">Лисий Нос</h2>
+                </div>
+                <div id="left" onclick="image(0)" class="btn_arrow">
+                    <img src="images/arrow.png" alt="left_arrow" />
+                </div>	
+                <div id="right" onclick="image(1)" class="btn_arrow_r">
+                    <img src="images/arrow_r.png" alt="left_arrow" />
+                </div>                               
+            </div>      
+            
+            <div class="wrapper_content">
+                <h1>Нами завершено более 360 ремонтов</h1>
+                <p>Посмотрите некоторые из них, чтобы оценить качество нашей работы</p>
+            </div> 
+            
+            <div class="wrapper_gallery">
+                <div class="gallery_item" onclick="gallery_img(2)">
+                    <div class="gallery_name">
+                        <h3>Лисий Нос</h3>
+                    </div>
+                </div>
+                <div class="gallery_item" onclick="gallery_img(1)">
+                    <div class="gallery_name">
+                        <h3>пр. Маршала Блюхера</h3>
+                    </div>
+                </div>
+                <div class="gallery_item" onclick="gallery_img(0)">
+                    <div class="gallery_name">
+                        <h3>ул. Долгоозерная</h3>
+                    </div>
+                </div>       
+            </div>
+            <div class="more">
+                <a href="#">больше наших ремонтов</a>
+            </div>            
+        </div>   
+        
+        <script src="js/scripts.js"></script>
+	</body>
+</html>
